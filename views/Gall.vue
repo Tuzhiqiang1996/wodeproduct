@@ -5,7 +5,7 @@
 	<div class="gallery py-5" id="gallery">
 		<div class="container pb-xl-5 pb-lg-3">
 			<div class="title text-center mb-sm-5 mb-4">
-				<h3 class="title-w3 text-bl text-center font-weight-bold">Our Gallery</h3>
+				<h3 class="title-w3 text-bl text-center font-weight-bold">我们的相册</h3>
 				<div class="arrw">
 					<i class="fa fa-glass" aria-hidden="true"></i>
 				</div>

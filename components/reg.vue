@@ -5,13 +5,13 @@
         <div class="col-md-12 text-center d-flex justify-content-between">
           <ul class="row">
             <li>
-              <router-link to="/Login">login</router-link>
+              <router-link to="/Login">登录</router-link>
             </li>
             <li class="active">
-              <router-link to="/reg">reg</router-link>
+              <router-link to="/reg">注册</router-link>
             </li>
             <li>
-              <a href="#">Forgot Password?</a>
+              <a href="#">忘记密码?</a>
             </li>
           </ul>
         </div>
@@ -25,10 +25,10 @@
             class="fh-form fadeInLeft"
             data-animate-effect="fadeInLeft"
           >
-            <h2>Sign Up</h2>
+            <h2>注册</h2>
             <div class="form-group">
               <div class="alert alert-success" role="alert">
-                Your info has been saved.
+                您的信息已被保存
               </div>
             </div>
             <div class="form-group">
@@ -85,19 +85,19 @@
             </div>
             <div class="form-group">
               <label for="remember">
-                <input type="checkbox" id="remember" /> Remember Me
+                <input type="checkbox" id="remember" /> 记住我！
               </label>
             </div>
             <div class="form-group">
               <p>
-                Already registered?
-                <router-link to="/login">Sign In</router-link>
+               已经注册?
+                <router-link to="/login">登录</router-link>
               </p>
             </div>
             <div class="form-group">
               <input
                 type="button"
-                value="Sign Up"
+                value="注册"
                 class="btn btn-primary"
                 @click="reg"
               />
@@ -158,13 +158,13 @@ export default {
       //发送ajax请求
       var url = "/reg";
       var obj = { uname: this.Username, upwd: this.Password };
-      console.log(1);
-      console.log(obj);
+      // console.log(1);
+      // console.log(obj);
       this.axios.get(url, {params:obj}).then(res => {
-        console.log(res);
-        console.log(2);
+        // console.log(res);
+        // console.log(2);
         if(res.data.code==-1){
-          this.$toast('用户已存在，请重新登陆')
+          this.$toast('用户已存在，请重新注册')
         }else{
           this.$messagebox.confirm("注册成功", "是否跳转登陆页面").then(res=>{
             this.$router.push('/login')

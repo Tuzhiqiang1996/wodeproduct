@@ -8,7 +8,8 @@ import MintUI from "mint-ui"
 import Myheader from './components/myHeader.vue'
 // import Login from './components/Login.vue'
 import "mint-ui/lib/style.css"
-axios.defaults.baseURL = 'http://127.0.0.1:4000/'
+axios.defaults.baseURL = 'http://127.0.0.1:4000/';
+axios.defaults.withCredentials=true;
 Vue.use(MintUI)
 Vue.config.productionTip = false
 Vue.prototype.axios = axios;

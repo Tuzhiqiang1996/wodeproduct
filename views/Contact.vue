@@ -5,7 +5,7 @@
 	<section class="contact-wthree py-5" id="contact">
 		<div class="container py-xl-5 py-lg-3">
 			<div class="title text-center mb-sm-5 mb-4">
-				<h3 class="title-w3 text-bl text-center font-weight-bold">Contact Us</h3>
+				<h3 class="title-w3 text-bl text-center font-weight-bold">联系我们</h3>
 				<div class="arrw">
 					<i class="fa fa-glass" aria-hidden="true"></i>
 				</div>

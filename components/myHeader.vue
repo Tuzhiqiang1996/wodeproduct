@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="happy" id="arr">
+    <div class="happy" id="arr" v-if="uname!==''">
         <header>
             <div class="container-fulid">
                 <div class="navbar navbar-expand-lg  navbar-dark head ">
                     <!--1、不折叠的菜单-->
-                    <a class="navbar-brand head-a " href=""><img src="/img/logo.png  " alt="" class="img-fluid">Celebration</a>
+                    <a class="navbar-brand head-a " href=""><img src="/img/logo.png  " alt="" class="img-fluid">Happy</a>
                     <!--2、lg隐藏，lg以下显示按钮-->
                     <button data-target="#dd" data-toggle="collapse" class="navbar-toggler">
                         Menu
@@ -15,32 +15,34 @@
                         <ul class="  navbar-nav   
                     head-right">
                             <li class="nav-item">
-                                <router-link class="nav-link active" to="/">Home</router-link>
+                                <router-link class="nav-link active" to="/">首页</router-link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="">
-                                    Pages
+                                   翻页
                                 </a>
                                 <ul class=''>
-                                    <li><a href="" class="drop-text active">About Us</a></li>
-                                    <li><a href="" class="drop-text">Event Schedule</a></li>
-                                    <li><a href="" class="drop-text">Our News</a></li>
-                                    <li><a href="#what" class="drop-text">What We do</a></li>
-                                    <li><a href="#testi" class="drop-text">Testimonials</a></li>
+                                    <li><a href="" class="drop-text active">关于我们</a></li>
+                                    <li><a href="" class="drop-text">
+                                     活动日程安排</a></li>
+                                    <li><a href="" class="drop-text">我们的新闻</a></li>
+                                    <li><a href="#what" class="drop-text">
+                                      我们所做的</a></li>
+                                    <li><a href="#testi" class="drop-text">奖状</a></li>
                                    
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" to="/Gall">Gallery</router-link>
+                                <router-link class="nav-link" to="/Gall">相册</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" to="/Contact">Contact</router-link>
+                                <router-link class="nav-link" to="/Contact">联系</router-link>
                             </li>
-                             <li class="nav-item">
-                               <router-link to="/login" class="nav-link">Login</router-link></li>
+                             <li class="nav-item" @click="loginout">
+                               <router-link to="/login" class="nav-link" >登录</router-link></li>
                                    
                                <li class="nav-item">
-                                <router-link to="/reg" class="nav-link">Register</router-link></li>
+                                <router-link to="/reg" class="nav-link">注册</router-link></li>
                         </ul>
                     </div>
                 </div>
@@ -52,7 +54,7 @@
                 <div class="style-banner text-center">
                     <img src="/img/img2.png" alt="" class="img-fluid">
                     <h4 class="text-li mb-5 mt-2">2020</h4>
-                    <h3 class="text-wh mb-4">New Year Celebration</h3>
+                    <h3 class="text-wh mb-4">新年快乐</h3>
                     <img src="/img/img5.png" alt="" class="img-fluid">
                 </div>
             </div>
@@ -69,12 +71,33 @@
             <img src="/img/ba2.png" alt="" class="img-fluid">
         </div>
     </div>
+    <div v-else>
+      请先登录
+        <router-link to="/login" class="nav-link" >登录</router-link>
+    </div>
   </div>
 </template>
 
 <script>
+import {mapState,mapMutations} from 'vuex'
 export default {
-  
+  methods:{
+    //清除
+    loginout(){
+      this.setUname('');
+      localStorage.clear();
+      sessionStorage.clear();
+    },
+      ...mapMutations(['setUname'])
+  },
+  //从浏览器中 localStorage  sessionStorage获取uname
+   mounted(){
+    var uname=localStorage.getItem('uname') || sessionStorage.getItem('uname');
+    this.setUname(uname||'')
+  },
+  computed: {
+    ...mapState(['uname'])
+  }
 }
 </script>
 <style  scoped>

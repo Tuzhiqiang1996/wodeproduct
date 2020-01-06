@@ -1,16 +1,49 @@
 <template>
   <div>
+
+<section class="brands">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-2 col-4 main-brand bg-grey">
+                    <span class="fa fa-500px mb-3" aria-hidden="true"></span>
+                    <h5>一夜暴富</h5>
+                </div>
+                <div class="col-md-2 col-4 main-brand bg-black">
+                    <span class="fa fa-gg mb-3" aria-hidden="true"></span>
+                    <h5>钱包鼓鼓</h5>
+                </div>
+                <div class="col-md-2 col-4 main-brand bg-dark2">
+                    <span class="fa fa-lastfm mb-3" aria-hidden="true"></span>
+                    <h5>岁岁平安</h5>
+                </div>
+                <div class="col-md-2 col-4 main-brand bg-grey">
+                    <span class="fa fa-openid mb-3" aria-hidden="true"></span>
+                    <h5>岁岁有我</h5>
+                </div>
+                <div class="col-md-2 col-4 main-brand bg-black">
+                    <span class="fa fa-ravelry mb-3" aria-hidden="true"></span>
+                    <h5>大吉大利</h5>
+                </div>
+                <div class="col-md-2 col-4 main-brand bg-dark2">
+                    <span class="fa fa-angellist mb-3" aria-hidden="true"></span>
+                    <h5>一切顺利</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="footer py-sm-5 py-4 text-center bg-dark">
         <div class="container py-xl-4 py-lg-3">
             <!-- logo -->
             <div class="logo-2 text-center">
                 <h2>
-                    <a class="" href="index.html"><img src="img/logo.png" alt="" class="img-fluid">Celebration</a>
+                    <a class="" href="index.html"><img src="img/logo.png" alt="" class="img-fluid">未来可期</a>
                 </h2>
             </div>
             <!-- //logo -->
             <div class="footer-ex my-5">
-                <h3 class="footer-tha">Thank You for Visiting</h3>
+                <h3 class="footer-tha">为自己鼓掌！</h3>
                 <img src="img/img5.png" alt="" class="img-fluid">
             </div>
             <!-- social icons footer -->
@@ -57,6 +90,26 @@
   </div>
 </template>
 <style  scoped>
+
+.main-brand {
+  padding: 2em;
+}
+.bg-grey {
+  background: #00cec9;
+}
+
+.bg-black {
+  background: #04dcd7;
+}
+
+.bg-dark2 {
+  background: #05e6e1;
+}
+
+.main-brand {
+  padding: 2em;
+}
+
 
 .footer {
   position: relative;

@@ -5,7 +5,7 @@
     <myhader></myhader>
       <div class="container py-xl-5 py-lg-3 text-center">
         <div class="title mb-sm-5 mb-4">
-            <h3 class="title-w3 text-bl text-center font-weight-bold">New Year Party Celebration</h3>
+            <h3 class="title-w3 text-bl text-center font-weight-bold">新年联欢会</h3>
             <img src="img/titt.png" alt="" class="img-fluid">
         </div>
         <!-- 轮播图 -->
@@ -14,31 +14,31 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="w-100" src="img/tu1.jpg" />
-                    <h3>你的新年愿望？</h3>
+                    <h3>新年愿望→家人健康快乐！</h3>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="img/tu2.jpg" />
-                    <h3>你的新年愿望？</h3>
+                    <h3>新年愿望→家人健康快乐！</h3>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="img/tu3.jpg" />
-                    <h3>你的新年愿望？</h3>
+                   <h3>新年愿望→家人健康快乐！</h3>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="img/tu4.jpg" />
-                    <h3>你的新年愿望？</h3>
+                    <h3>新年愿望→家人健康快乐！</h3>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="img/tu5.jpg" />
-                    <h3>你的新年愿望？</h3>
+                    <h3>新年愿望→家人健康快乐！</h3>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="img/tu6.jpg" />
-                    <h3>你的新年愿望？</h3>
+                    <h3>新年愿望→家人健康快乐！</h3>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="img/tu7.jpg" />
-                    <h3>你的新年愿望？</h3>
+                    <h3>新年愿望→家人健康快乐！</h3>
                 </div>
             </div>
             <!-- 2.左右箭头-->
@@ -72,11 +72,11 @@
         <div class="container py-xl-5 py-lg-3">
             <div class="row py-lg-5 my-sm-4">
                 <div class="col-lg-7 mt-4">
-                    <p class="text-li mb-2">Get, Set, Ready and Go..</p>
-                    <h3 class="text-wh">Let's Celebrate the New Year Party</h3>
+                    <p class="text-li mb-2">准备，开始，出发...</p>
+                    <h3 class="text-wh">让我们庆祝新年晚会</h3>
                 </div>
                 <div class="col-lg-5 mt-lg-0 mt-5">
-                    <h4>Rock the <br>Party!!</h4>
+                    <h4>让我们 <br>嗨起来!</h4>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
     <div class="serives-agile py-5" id="what">
         <div class="container py-xl-5 py-lg-3">
             <div class="title text-center mb-sm-5 mb-4">
-                <h3 class="title-w3 text-bl text-center font-weight-bold">What We Do for You</h3>
+                <h3 class="title-w3 text-bl text-center font-weight-bold"> 为 您 推 荐</h3>
                 <div class="arrw">
                     <i class="fa" aria-hidden="true">
                         <img src="img/jiubei-copy.png" alt="">
@@ -193,7 +193,7 @@
     <div class="about-w3sec py-5" id="event">
         <div class="container py-xl-5 py-lg-3">
             <div class="title text-center mb-sm-5 mb-4">
-                <h3 class="title-w3 text-bl text-center font-weight-bold">Party Event Schedule</h3>
+                <h3 class="title-w3 text-bl text-center font-weight-bold"> 活 动 安 排 </h3>
                 <div class="arrw">
                     <i class="fa fa-glass" aria-hidden="true">
                         <img src="img/jiubei.png" alt="">
@@ -286,7 +286,7 @@
     <div class="testimonials text-center py-5" id="testi">
         <div class="container py-xl-5 py-lg-3">
             <div class="title mb-sm-5 mb-4">
-                <h3 class="title-w3 text-wh text-center font-weight-bold">What Our People Say</h3>
+                <h3 class="title-w3 text-wh text-center font-weight-bold">呐喊你的心声！</h3>
                 <img src="img/tiw.png" alt="" class="img-fluid">
             </div>
             <div class="row pt-4 my-md-4">
@@ -343,7 +343,7 @@
     <section class="blog_w3ls py-5" id="news">
         <div class="container py-xl-5 py-lg-3">
             <div class="title text-center mb-sm-5 mb-4">
-                <h3 class="title-w3 text-bl text-center font-weight-bold">Latest News</h3>
+                <h3 class="title-w3 text-bl text-center font-weight-bold"> 最 新 消 息 </h3>
                 <div class="arrw">
                     <i class="fa fa-glass" aria-hidden="true">
                         <img src="img/jiubei_1.png" alt="">
@@ -427,7 +427,7 @@
         </div>
     </section>
     <!-- 12 -->
-    <section class="brands">
+    <!-- <section class="brands">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-md-2 col-4 main-brand bg-grey">
@@ -456,7 +456,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- 13 -->
     
     <!-- 描点 -->
